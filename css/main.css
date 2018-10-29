@@ -58,14 +58,25 @@ textarea {
 
 .primary-color {
     background-color: #2ba6cb;
+	width: 80%;
+	order: 2;
+	flex: 7;
+	
 }
 
 .secondary-color {
     background-color: #e9e9e9;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .default {
     background-color: #ffae00;
+	width: 20%;
+	flex-wrap: wrap;
+	margin: 0;
+	flex: 1;
+	order: 3;
 
 }
 
@@ -76,6 +87,7 @@ textarea {
 header {
     background-image: url(http://via.placeholder.com/960x100/000?text=HeaderBGImage);
     background-position: center;
+	width: 100%;
 }
 
 header h1 {
@@ -89,7 +101,34 @@ header h1 {
 }
 
 
+		ul{
+		display: flex;
+		flex-wrap: wrap;
+		list-style-type: none;
+		paddi: none;
+		}
+		*{
+		margin: 0;
+		padding: 0;
+		}
+		figure{
+		position:relative;
+		background: black
+		}
+		figcaption{
+		background-color: rgba(255, 255, 255, 0.5);
+		width: 100%;
+		position: absolute;
+		top: 0;
+		}
+		
+		.primary-color{
 
+		}
+		.default{
+
+		
+		}
 
 
 
@@ -118,6 +157,12 @@ header h1 {
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
 
+}
+@media only screen and (max-width: 700px){
+	body{
+		flex-flow; column;
+	}
+	
 }
 
 /* ==========================================================================
